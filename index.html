@@ -1,21 +1,91 @@
+Aqui está uma estrutura completa e moderna para um site sobre conscientização e prevenção do Bullying na Escola.
+
+O projeto foi dividido nos três arquivos fundamentais da web: HTML (estrutura), CSS (estilo e design) e JavaScript (interatividade das abas).
+
+1. index.html (Estrutura do Site)
+Crie um arquivo chamado index.html e cole o código abaixo:
+
+HTML
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bullying nas escolas</title>
-    </head>
-    <body>
-        <h1>Bullying na Escola</h1>
-        <p>Este site é sobre perguntas e respostas s
-            obre como combater o bullying na escola na visão dos alunos, mas
-             pais e professores podem responder também </p>
-        </p>é ter dados reais sobre esse assunto para poder combater.
-         dúvidas e relatar de forma segura.
-        especialistas em educação e psicologos 
-        respodem com orientação práticas.
-        a comunidade também compartilha apoio e experiencias reais.
-        tem seções de denúncia,direitos e dicas para escolas e internet</p>
-        
-    </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntos Contra o Bullying</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Escola Segura</h1>
+        <p>Conscientização, Empatia e Respeito no Ambiente Escolar</p>
+    </header>
+
+    <nav class="tabs-navigation">
+        <button class="tab-button active" onclick="openTab(event, 'inicio')">Início</button>
+        <button class="tab-button" onclick="openTab(event, 'o-que-e')">O que é Bullying?</button>
+        <button class="tab-button" onclick="openTab(event, 'tipos')">Tipos de Bullying</button>
+        <button class="tab-button" onclick="openTab(event, 'como-ajudar')">Como Ajudar</button>
+    </nav>
+
+    <main class="container">
+
+        <section id="inicio" class="tab-content active">
+            <h2>Bem-vindo à nossa campanha</h2>
+            <p>O ambiente escolar deve ser um lugar de aprendizado, amizade e crescimento. O bullying prejudica o bem-estar dos estudantes e afeta toda a comunidade escolar.</p>
+            <blockquote>
+                "Tratar todos com respeito e empatia é o primeiro passo para construir uma escola melhor para todos."
+            </blockquote>
+        </section>
+
+        <section id="o-que-e" class="tab-content">
+            <h2>Entendendo o Bullying</h2>
+            <p>Bullying é caracterizado por comportamentos agressivos, intencionais e repetitivos, adotados por um ou mais estudantes contra outro, sem motivação evidente, causando dor e angústia.</p>
+            <ul>
+                <li><strong>Desequilíbrio de poder:</strong> Quem pratica costuma usar sua força física, popularidade ou acesso a informações para intimidar.</li>
+                <li><strong>Repetição:</strong> Não se trata de uma brincadeira isolada, mas de ações recorrentes.</li>
+                <li><strong>Intencionalidade:</strong> Há o objetivo claro de ferir ou diminuir a outra pessoa.</li>
+            </ul>
+        </section>
+
+        <section id="tipos" class="tab-content">
+            <h2>Principais Formas de Bullying</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Físico</h3>
+                    <p>Empurrões, chutes, beliscões, agressões ou danos aos pertences de outra pessoa.</p>
+                </div>
+                <div class="card">
+                    <h3>Verbal</h3>
+                    <p>Apelidos pejorativos, xingamentos, insultos e piadas ofensivas de forma constante.</p>
+                </div>
+                <div class="card">
+                    <h3>Social / Relacional</h3>
+                    <p>Exclusão de grupos, espalhar boatos ou ignorar a pessoa propositalmente.</p>
+                </div>
+                <div class="card">
+                    <h3>Cyberbullying</h3>
+                    <p>Agressões e intimidações feitas por meio da internet, redes sociais e aplicativos de mensagem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-ajudar" class="tab-content">
+            <h2>Como Agir e Pedir Ajuda</h2>
+            <p>Se você está passando por isso ou presenciou alguém sofrendo bullying, lembre-se de que <strong>você não está sozinho</strong>.</p>
+            <ul>
+                <li><strong>Converse com um adulto de confiança:</strong> Pais, professores, coordenadores ou psicólogos escolares podem intervir.</li>
+                <li><strong>Não seja um espectador silencioso:</strong> Apoie quem está sendo atacado e ajude a denunciar a situação.</li>
+                <li><strong>Guarde provas:</strong> No caso de cyberbullying, tire prints de mensagens e publicações.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Escola Segura — Juntos pelo respeito no ambiente escolar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
